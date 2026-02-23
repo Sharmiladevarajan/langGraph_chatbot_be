@@ -2,17 +2,16 @@
 fastapi==0.109.2
 uvicorn[standard]==0.27.1
 
-# Core Lang stack (locked to compatible set)
+# LangChain stack (fully compatible)
 langchain==0.3.27
 langchain-core==0.3.83
 langchain-community==0.3.31
 langchain-openai==0.3.35
 langgraph==1.0.1
 
-# Pinecone
-pinecone-client==5.0.1
-langchain-pinecone==0.2.13
-
+# Pinecone (stable combo)
+pinecone-client==3.2.2
+langchain-pinecone==0.1.6
 
 # Embeddings
 sentence-transformers==3.3.1
