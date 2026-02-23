@@ -1,0 +1,29 @@
+ # Web framework
+fastapi==0.109.2
+uvicorn[standard]==0.27.1
+
+# LangGraph & LangChain (langchain needs langchain-core<1.0; langchain-openai 0.3.x matches)
+langgraph>=0.2.28
+langchain>=0.3.7
+langchain-community>=0.3.7
+langchain-core>=0.3.72,<1.0.0
+langchain-openai>=0.3.16,<0.4
+
+# Document processing
+pypdf==5.1.0
+python-multipart==0.0.9
+
+# Vector store (Pinecone) & embeddings
+pinecone>=5.0.0
+langchain-pinecone>=0.2.0
+sentence-transformers==3.3.1
+
+# LLM clients (openai version set by langchain-openai)
+httpx==0.27.2
+
+# Config & env (pydantic>=2.7.4 required by langchain)
+pydantic>=2.7.4,<3.0.0
+pydantic-settings>=2.2.1
+
+# Optional: local LLM (Ollama)
+# ollama  # uncomment if using Ollama

@@ -1,0 +1,14 @@
+# Backend
+.venv/
+__pycache__/
+*.pyc
+chroma_db/
+.env
+
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
