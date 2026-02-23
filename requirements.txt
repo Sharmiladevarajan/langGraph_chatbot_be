@@ -1,26 +1,27 @@
- # Web framework
+# Web
 fastapi==0.109.2
 uvicorn[standard]==0.27.1
 
-# LangGraph & LangChain (langchain needs langchain-core<1.0; langchain-openai 0.3.x matches)
-langgraph>=0.2.28
-langchain>=0.3.7
-langchain-community>=0.3.7
-langchain-core>=0.3.72,<1.0.0
-langchain-openai>=0.3.16,<0.4
+# Core Lang stack (locked to compatible set)
+langchain==0.3.9
+langchain-core==0.3.72
+langchain-community==0.3.9
+langchain-openai==0.3.16
+langgraph==0.2.35
 
-# Document processing
+# Pinecone
+pinecone-client==5.0.1
+langchain-pinecone==0.2.13
+
+# Embeddings
+sentence-transformers==3.3.1
+transformers==4.44.2
+torch==2.2.2
+
+# Docs
 pypdf==5.1.0
 python-multipart==0.0.9
 
-# Vector store (Pinecone) & embeddings
-pinecone>=5.0.0
-langchain-pinecone>=0.2.0
-sentence-transformers==3.3.1
-
-# Config & env (pydantic>=2.7.4 required by langchain)
-pydantic>=2.7.4,<3.0.0
-pydantic-settings>=2.2.1
-
-# Optional: local LLM (Ollama)
-# ollama  # uncomment if using Ollama
+# Config
+pydantic==2.8.2
+pydantic-settings==2.4.0
